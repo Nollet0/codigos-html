@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Cadastro</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form>
+        <table borde="2">
+            <tr>
+                <td><label><for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome" required autocomplete="off"></td> <!--existe a possibilidade de retirar o campo "autocomplete=off" isso impede que o navegador sugira ou preencha automaticamente os dados anteriores-->
+
+            </tr>
+            <tr>
+                <td><label for="senha">Senha:</label></td>
+                <td><input type="passaword" id="senha" name="senha" required autocomplete="off"></td><!--existe a possibilidade de retirar o campo "autocomplete=off" isso impede que o navegador sugira ou preencha automaticamente os dados anteriores-->
+            </tr>
+            <tr>
+                <td><label for="sexo">Sexo:</label></td>
+                <td>
+                    <input type="radio" id="masculino" name="sexo" value="masculino"><!--use o comando "checkbox"(caixas de seleção) no lugar do "radio" possibilitando que multiplas opções sejam escolhidas-->
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">feminino</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="estado civl">Estado Civil:</label></td>
+                <td>
+                    <select id="estado civil" name="estado civil">
+                        <option value="casado">Casado</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="viuvo">Viuvo</option>
+                        <option value="divorciado">Divorciado</option>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comentarios">Comentários</label></td>
+                <td><textarea id="cometarios" nmae="comentarios" rows="3"></textarea></td>
+            </tr>
+        </table>
+        <td colspan="2" aling="center">
+            <button type="submit" style="padding: 5px 10px; font-size: 10px">ENVIAR</button>            
+        </td> 
+        
+
+    </form>
+
+</body>
+</html>
